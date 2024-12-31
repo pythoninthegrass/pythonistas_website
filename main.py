@@ -3,6 +3,7 @@
 from fasthtml.common import *
 from textwrap import dedent
 
+
 hdrs = (
     Link(rel='stylesheet', href='static/normalize.css', type='text/css'),
     # Link(rel='stylesheet', href='static/sakura.css', type='text/css'),
@@ -17,13 +18,16 @@ app, rt = fast_app(
     pico=False,
 )
 
+
 @rt("/")
 def get():
-  return Titled("FastHTML", P("Let's do this!"))
+    return Titled("FastHTML", P("Let's do this!"))
+
 
 @rt("/hello")
 def get():
-  return Titled("Hello, world!")
+    return Titled("Hello, world!")
+
 
 @rt("/markdown")
 def get(req):
@@ -41,5 +45,6 @@ def get(req):
             Pre(Code(code_example))
         )
     )
+
 
 serve()
