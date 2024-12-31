@@ -48,5 +48,7 @@ poetry run ./main.py
 * [Git](https://git-scm.com/doc)
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [HTMX](https://htmx.org/)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Markdown](https://www.markdownguide.org/)
