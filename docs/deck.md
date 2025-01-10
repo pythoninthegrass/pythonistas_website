@@ -39,7 +39,7 @@ Lance Stephens
 ## Agenda
 
 * What will _not_ be covered (at least in the deck):
-  * Python
+  * Python basics
   * Git/GitHub
   * DNS
 
@@ -74,7 +74,7 @@ FastHTML is a new next-generation web framework for fast, scalable web applicati
 
 FastHTML apps are just Python code, so you can use FastHTML with the full power of the Python language and ecosystem.  
 
-FastHTML’s functionality maps 1:1 directly to HTML and HTTP, but allows them to be encapsulated using good software engineering practices—so you’ll need to understand these foundations to use this library fully.  
+FastHTML’s functionality maps 1:1 directly to **HTML** and **HTTP**, but allows them to be encapsulated using good software engineering practices — so **you’ll need to understand these foundations to use this library fully** [emphasis mine].
 
 ---
 
