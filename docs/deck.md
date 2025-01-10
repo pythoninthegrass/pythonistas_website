@@ -53,6 +53,9 @@ FastHTML is a Python library that abstracts lower level HTML, CSS, JavaScript, a
 
 ---
 
+[.autoscale: false]
+[.text: Courier, text-scale(1.0), line-height(1.0)]
+
 ## What is FastHTML?
 
 From the [offical docs](https://docs.fastht.ml/):
@@ -64,11 +67,17 @@ FastHTML is a new next-generation web framework for fast, scalable web applicati
 
 ---
 
+[.autoscale: false]
+[.text: Courier, text-scale(1.0), line-height(1.0)]
+
 ## What is FastHTML?
 
 * Easy to learn and use, with a simple, intuitive syntax that makes it easy to build complex apps quickly.
 
 ---
+
+[.autoscale: false]
+[.text: Courier, text-scale(1.0), line-height(1.0)]
 
 ## What is FastHTML?
 
@@ -206,6 +215,19 @@ p {
 ### HTMX
 
 (JavaScript* one more time with feeling)
+
+---
+
+### What is HTMX
+
+[.autoscale: false]
+[.text: Courier, text-scale(0.9), line-height(1.0)]
+
+From the [docs](https://htmx.org/):
+
+htmx gives you access to **AJAX**, **CSS Transitions**, **WebSockets** and **Server Sent Events** directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of **hypertext**
+
+htmx is small (~14k min.gz’d), dependency-free, extendable & has reduced code base sizes by 67% when compared with react
 
 ---
 
