@@ -54,7 +54,7 @@ FastHTML is a Python library that abstracts lower level HTML, CSS, JavaScript, a
 ---
 
 [.autoscale: false]
-[.text: Courier, text-scale(1.0), line-height(1.0)]
+[.text: Courier, text-scale(0.9), line-height(1.0)]
 
 ## What is FastHTML?
 
@@ -86,6 +86,9 @@ FastHTML apps are just Python code, so you can use FastHTML with the full power 
 FastHTML’s functionality maps 1:1 directly to **HTML** and **HTTP**, but allows them to be encapsulated using good software engineering practices — so **you’ll need to understand these foundations to use this library fully** [emphasis mine].
 
 ---
+
+[.autoscale: false]
+[.text: Courier, text-scale(1.0), line-height(1.0)]
 
 ## Features
 
