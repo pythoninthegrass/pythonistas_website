@@ -1,15 +1,24 @@
 #!/usr/bin/env python
 
+from decouple import config
 from fasthtml.common import *
+from pathlib import Path
 from textwrap import dedent
 
 
+PORT = config('PORT', default=8000, cast=int)
+RELOAD = config('RELOAD', default=True, cast=bool)
+
+css = Path("static/styles.css").read_text()
+# javascript = Path("static/script.js").read_text()
+
 hdrs = (
     Link(rel='stylesheet', href='static/normalize.css', type='text/css'),
-    # Link(rel='stylesheet', href='static/sakura.css', type='text/css'),
+    Link(rel='stylesheet', href='static/sakura.css', type='text/css'),
     Link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css', type='text/css'),
-    # Style("p {color: red;}"),
     HighlightJS(langs=['python', 'javascript', 'html', 'css']),
+    Style(css),
+    # Script(javascript),
 )
 
 app, rt = fast_app(
@@ -21,30 +30,28 @@ app, rt = fast_app(
 
 @rt("/")
 def get():
-    return Titled("FastHTML", P("Let's do this!"))
-
-
-@rt("/hello")
-def get():
-    return Titled("Hello, world!")
-
-
-@rt("/markdown")
-def get(req):
-    code_example = dedent("""
-    import datetime
-    import time
-
-    for i in range(10):
-        print(f"{datetime.datetime.now()}")
-        time.sleep(1)
-    """)
-    return Titled(
-       "Markdown rendering example",
+    main_content = Main(
         Div(
-            Pre(Code(code_example))
+            Nav(
+                A("Home", href="/"),
+                A("About", href="/about"),
+                A("Events", href="/events"),
+                A("Contact", href="/contact"),
+            ),
+            Titled(
+                "Pythonistas",
+                P("Let's do this!")
+            )
         )
     )
 
+    return main_content
 
-serve()
+
+if __name__ == "__main__":
+    serve(appname='main',
+          app='app',
+          host='0.0.0.0',
+          port=PORT,
+          reload=RELOAD
+    )
