@@ -10,6 +10,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
 python-fasthtml = "^0.10.3"
+python-decouple = "^3.8"
 
 [tool.poetry.group.dev.dependencies]
 argcomplete = "^3.5.0"
@@ -118,7 +119,7 @@ select = [
 ]
 # Skip unused variable rules
 ignore = []
-extend-ignore = ["D203", "E203", "E251", "E266", "E401", "E402", "E501", "F401", "F403"]
+extend-ignore = ["D203", "E203", "E251", "E266", "E401", "E402", "E501", "F401", "F403", "F405"]
 
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
